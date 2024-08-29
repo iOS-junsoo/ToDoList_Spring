@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KyoboHandwriting2023wsa.otf">
+            <string>KyoboHandwriting2023wsa</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoList_Spring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ymq-F9-mbm">
+                                <rect key="frame" x="0.0" y="139" width="393" height="564"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UW-Bz-CHr">
+                                <rect key="frame" x="300" y="711" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MUm-9m-yLk"/>
+                                    <constraint firstAttribute="width" constant="60" id="wzC-nW-SeA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="zQJ-SB-m46" kind="presentation" modalPresentationStyle="fullScreen" id="2qj-y1-UTv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2024.08.24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6s-n2-Eug">
+                                <rect key="frame" x="131.66666666666666" y="69" width="129.99999999999997" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="fie-1u-KB4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KyoboHandwriting2023wsa" family="Kyobo Handwriting 2023" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.94901960784313721" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6s-n2-Eug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xR-4O-Bro"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ymq-F9-mbm" secondAttribute="trailing" id="Arp-Wa-V9X"/>
+                            <constraint firstItem="Ymq-F9-mbm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dmy-7n-V5e"/>
+                            <constraint firstItem="Ymq-F9-mbm" firstAttribute="top" secondItem="D6s-n2-Eug" secondAttribute="bottom" constant="40" id="DwW-5H-2vH"/>
+                            <constraint firstItem="D6s-n2-Eug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Efb-xM-o9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1UW-Bz-CHr" secondAttribute="trailing" constant="33" id="Jnd-Yo-cKH"/>
+                            <constraint firstAttribute="bottom" secondItem="1UW-Bz-CHr" secondAttribute="bottom" constant="81" id="LA3-yb-2hE"/>
+                            <constraint firstItem="1UW-Bz-CHr" firstAttribute="top" secondItem="Ymq-F9-mbm" secondAttribute="bottom" constant="8" symbolic="YES" id="Qb8-o1-NPE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="D6s-n2-Eug" id="re3-IJ-l3x"/>
+                        <outlet property="tableView" destination="Ymq-F9-mbm" id="d9T-BI-fCI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-2.1126760563380285"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="Ive-Kz-G6h">
+            <objects>
+                <viewController id="zQJ-SB-m46" customClass="AddViewController" customModule="ToDoList_Spring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wos-8p-kHr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t87-vi-9m1">
+                                <rect key="frame" x="20" y="150" width="353" height="2"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="c3i-kz-Q24"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 제목을 작성해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKT-dL-d6H">
+                                <rect key="frame" x="20" y="108" width="353" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kxw-Gg-3lj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KyoboHandwriting2023wsa" family="Kyobo Handwriting 2023" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 작성해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-gt-XsQ">
+                                <rect key="frame" x="20" y="155" width="353" height="380"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="zYk-V6-yQ2"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KyoboHandwriting2023wsa" family="Kyobo Handwriting 2023" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-Cj-eB5">
+                                <rect key="frame" x="300" y="742" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BSd-1g-8IF"/>
+                                    <constraint firstAttribute="width" constant="60" id="aZI-X0-Wk9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="check" symbolScale="large"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addBtn:" destination="zQJ-SB-m46" eventType="touchUpInside" id="J93-3E-5CP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOq-DV-6yZ">
+                                <rect key="frame" x="20" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4hx-vh-Fe0"/>
+                                    <constraint firstAttribute="width" constant="40" id="nfF-M8-Hc3"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backBtn:" destination="zQJ-SB-m46" eventType="touchUpInside" id="m0y-BR-VUN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BbB-eS-MNw"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.94901960784313721" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BbB-eS-MNw" firstAttribute="trailing" secondItem="t87-vi-9m1" secondAttribute="trailing" constant="20" id="0T3-1l-9NR"/>
+                            <constraint firstItem="t87-vi-9m1" firstAttribute="top" secondItem="BbB-eS-MNw" secondAttribute="top" constant="150" id="3qX-4q-gHw"/>
+                            <constraint firstItem="RBe-gt-XsQ" firstAttribute="top" secondItem="t87-vi-9m1" secondAttribute="bottom" constant="3" id="BoS-bY-2cK"/>
+                            <constraint firstItem="BbB-eS-MNw" firstAttribute="trailing" secondItem="RKT-dL-d6H" secondAttribute="trailing" constant="20" id="CSo-Cz-SLB"/>
+                            <constraint firstItem="jOq-DV-6yZ" firstAttribute="top" secondItem="BbB-eS-MNw" secondAttribute="top" constant="30" id="F4z-NU-nft"/>
+                            <constraint firstItem="BbB-eS-MNw" firstAttribute="trailing" secondItem="Jxq-Cj-eB5" secondAttribute="trailing" constant="33" id="IEU-Ux-mu4"/>
+                            <constraint firstItem="RKT-dL-d6H" firstAttribute="top" secondItem="jOq-DV-6yZ" secondAttribute="bottom" constant="38" id="RWU-No-oTP"/>
+                            <constraint firstItem="jOq-DV-6yZ" firstAttribute="leading" secondItem="BbB-eS-MNw" secondAttribute="leading" constant="20" id="UlJ-1b-sN1"/>
+                            <constraint firstItem="RKT-dL-d6H" firstAttribute="leading" secondItem="t87-vi-9m1" secondAttribute="trailing" constant="-353" id="anU-B6-TnF"/>
+                            <constraint firstItem="RKT-dL-d6H" firstAttribute="leading" secondItem="BbB-eS-MNw" secondAttribute="leading" constant="20" id="bDs-43-cpe"/>
+                            <constraint firstItem="BbB-eS-MNw" firstAttribute="bottom" secondItem="Jxq-Cj-eB5" secondAttribute="bottom" constant="50" id="j5M-Ac-c3m"/>
+                            <constraint firstItem="BbB-eS-MNw" firstAttribute="trailing" secondItem="RBe-gt-XsQ" secondAttribute="trailing" constant="20" id="lAi-Fo-FAb"/>
+                            <constraint firstItem="RBe-gt-XsQ" firstAttribute="leading" secondItem="BbB-eS-MNw" secondAttribute="leading" constant="20" id="yjr-aH-PKQ"/>
+                            <constraint firstItem="t87-vi-9m1" firstAttribute="leading" secondItem="BbB-eS-MNw" secondAttribute="leading" constant="20" id="zs1-63-WQq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0gC-Lv-PWS"/>
+                    <connections>
+                        <outlet property="addBtn" destination="Jxq-Cj-eB5" id="iCb-z0-NaK"/>
+                        <outlet property="descriptionText" destination="RBe-gt-XsQ" id="EJl-gy-cHa"/>
+                        <outlet property="titleText" destination="RKT-dL-d6H" id="rwJ-fp-3MC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBu-7s-XDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="8"/>
+        </scene>
+        <!--Todo Detail View Controller-->
+        <scene sceneID="wbx-uc-kRB">
+            <objects>
+                <viewController storyboardIdentifier="TodoDetailViewController" id="H0K-lQ-BWR" customClass="TodoDetailViewController" customModule="ToDoList_Spring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwX-NV-33T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPH-L7-hp8">
+                                <rect key="frame" x="20" y="209" width="353" height="2"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="b1a-Qk-8Nf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J72-1S-Kef">
+                                <rect key="frame" x="20" y="89" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VEK-82-7S1"/>
+                                    <constraint firstAttribute="width" constant="40" id="sHd-17-acN"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backBtn:" destination="H0K-lQ-BWR" eventType="touchUpInside" id="Ijf-fw-Iex"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="614-GE-neP">
+                                <rect key="frame" x="20" y="167" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9ko-2s-61D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KyoboHandwriting2023wsa" family="Kyobo Handwriting 2023" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRp-sW-TsB">
+                                <rect key="frame" x="20" y="219" width="353" height="21"/>
+                                <fontDescription key="fontDescription" name="KyoboHandwriting2023wsa" family="Kyobo Handwriting 2023" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d6B-x3-ygv"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.94901960780000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d6B-x3-ygv" firstAttribute="trailing" secondItem="eRp-sW-TsB" secondAttribute="trailing" constant="20" id="93P-2X-BEN"/>
+                            <constraint firstItem="614-GE-neP" firstAttribute="top" secondItem="J72-1S-Kef" secondAttribute="bottom" constant="38" id="BsP-gn-Guz"/>
+                            <constraint firstItem="J72-1S-Kef" firstAttribute="top" secondItem="d6B-x3-ygv" secondAttribute="top" constant="30" id="JkD-Wx-w61"/>
+                            <constraint firstItem="614-GE-neP" firstAttribute="leading" secondItem="d6B-x3-ygv" secondAttribute="leading" constant="20" id="Q5U-T0-79L"/>
+                            <constraint firstItem="d6B-x3-ygv" firstAttribute="trailing" secondItem="614-GE-neP" secondAttribute="trailing" constant="20" id="TOr-Lf-UGH"/>
+                            <constraint firstItem="qPH-L7-hp8" firstAttribute="top" secondItem="d6B-x3-ygv" secondAttribute="top" constant="150" id="YmY-dL-UXJ"/>
+                            <constraint firstItem="eRp-sW-TsB" firstAttribute="leading" secondItem="d6B-x3-ygv" secondAttribute="leading" constant="20" id="ZST-1L-6te"/>
+                            <constraint firstItem="d6B-x3-ygv" firstAttribute="trailing" secondItem="qPH-L7-hp8" secondAttribute="trailing" constant="20" id="aba-vk-vVN"/>
+                            <constraint firstItem="J72-1S-Kef" firstAttribute="leading" secondItem="d6B-x3-ygv" secondAttribute="leading" constant="20" id="bss-hK-ZOX"/>
+                            <constraint firstItem="eRp-sW-TsB" firstAttribute="top" secondItem="qPH-L7-hp8" secondAttribute="bottom" constant="8" symbolic="YES" id="ccV-ba-7St"/>
+                            <constraint firstItem="qPH-L7-hp8" firstAttribute="leading" secondItem="d6B-x3-ygv" secondAttribute="leading" constant="20" id="ciO-Ab-4Ko"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4uz-uf-qRf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0lo-Ul-04m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="738"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="128" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
